@@ -8,7 +8,7 @@ module Tabulous
     end
     config.to_prepare do
       filename = File.join(Rails.root.to_s, 'app/tabs/tabulous.rb')
-      load filename if File.exists?(filename)
+      load filename if File.exist?(filename)
     end
   end
 end
